@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WITECH</title>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="apple-touch-icon-precomposed" href="">
+    <link rel="icon" href="">
+    <link rel="mask-icon" href="https://dl.dropbox.com/s/cf3okc9a0sppxjq/witechpnglogo%20%282%29.png?dl=0" color="rgb(36,38,58)">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<head>
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css?family=Kumar+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/4.0.1/placeholders.jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.0.0/jquery.smooth-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.js"></script>
+<header>
+  <a class="logo" href="index.html"><img src="https://dl.dropbox.com/s/cf3okc9a0sppxjq/witechpnglogo%20%282%29.png?dl=0" width="143" height="80" margin-left= "420px"><br></a>
+  <p class="tagline"></p>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <nav align="left">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <div class="dropdown">
+      <li><a href="#">Services</a>
+      <div class="dropdown-content">
+        <a href="passivewitech.html">PASSIVE INFRA SOLUTION ( CIVIL & ELECTRICAL)</a>
+   <br><hr>
+   <a href="projectmanwitech.html">PROJECT MANAGEMENT</a>
+   <br><hr>
+    <a href="tiwitech.html">TELECOM IMPLEMENTATION SOLUTION </a>
+    <br><hr>
+    <a href="resowitech.html">Resources Outsourcing</a>
+    <br><hr>
+    <a href="appswitech.html">Software & Website Development</a>
+  </div></li></div>
+      <li><a href="witechgallery.html">Gallery</a></li>
+      <div class="dropdown">
+      <li><a href="#">Careers</a>
+<div class="dropdown-content">
+   <a href="witechjobvacan.html">Current Opening</a>
+   <br><hr>
+   <a href="career.html">Job Application</a>
+      </li></div>
+      <li><a href="contactwitech.html">Contact</a></li>
+    </ul>
+  </nav>
+  <label for="nav-toggle" class="nav-toggle-label">
+    <span></span>
+  </label>
+</header>
+<style>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 480px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+<style>
+.tagline{
+  text-align: right;
+}
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,600");
+:root {
+  --background: white;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*rgba(0, 214, 170, .85)*/
+/* navigation styles start here */
+header {
+  background: var(--background);
+  text-align: center;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+}
+.nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.nav-toggle:focus ~ .nav-toggle-label {
+  outline: 3px solid rgba(173, 216, 230, 0.75);
+}
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: #e19526;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+.nav-toggle-label span::after {
+  top: 7px;
+}
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  width: 100%;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+   margin-top: -50px;
+  list-style: none;
+}
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+nav a {
+  color: #A9A9A9 !important;
+  text-decoration: none;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+nav a:hover {
+  color: #000;
+}
+.nav-toggle:checked ~ nav {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+@media screen and (min-width: 800px) {
+  .nav-toggle-label {
+    display: none;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+  .logo{
+    margin-top: 70px;
+    margin-left: 920px;
+  }
+  /*.logo {
+   grid-column: 2 / 3;
+  }*/
+  nav {
+    position: relative;
+    text-align: left;
+    transition: none;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    background: none;
+    top: initial;
+    left: initial;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+  nav a {
+    opacity: 4;
+    position: relative;
+  }
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: black;
+    position: absolute;
+    top: -.75em;
+    left: 0;
+    right: 0;
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+    transition: -webkit-transform ease-in-out 250ms;
+    transition: transform ease-in-out 250ms;
+    transition: transform ease-in-out 250ms, -webkit-transform ease-in-out 250ms;
+  }
+  nav a:hover::before {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+</style>
+<hr>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+<h1 class="abtus"></h1>
+<style>
+  .abtus{
+   font-size: 6em;
+    text-align: center;
+    font-family: 'Kumar One', cursive;
+    margin-top: 80px;
+    text-decoration: underline;    
+  }
+  .image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+.ser { 
+   position: absolute; 
+   top: 300px; 
+   right: 60; 
+   width: 100%;
+ }
+   .ser span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+   font-size: 60px; 
+   text-decoration: underline;
+} 
+}
+</style>
+<div class="image">
+<img src="https://dl.dropbox.com/s/cyrwz21wsunn68k/witechheadhead2.jpg?dl=0" width="100%" height="500px" alt=""/>
+    
+</div>
+<br>
+<h3 class="do">TELECOM IMPLEMENTATION SOLUTION (TI)</h3>
+<style>
+   .do{
+   font-size: 2.3em;
+    text-align: left;
+    font-style: bold;
+    color: black !important;
+    font-weight: 500;
+  }
+  .joto{
+    color: #878787;
+    font-size: 1em;
+  font-weight: 500;
+  }
+  .jotot{
+    font-style: bold;
+    color: #878787;
+  }
+ 
+</style>
+<p class="joto">WI-Tech offers a comprehensive portfolio of Support Services and Remote Infrastructure Management Services aligned to the business domain of our Clients.  Our support is tailored to customer requirements and has the flexibility to implement and manage key projects that is a part of our ongoing operations. This provides our customers the best – allowing them to focus on their core competencies and be confident that their services are being well managed professionally by a reliable organization.</p><br>
+<div class="w3-panel w3-leftbar w3-dark-grey">
+<h3>Services we deliver under Active Infra and Network Implementation:</h3>
+</div>
+<p class="jotot">
+• BTS, GSM Antenna & RF Feeder Cable Installation, Commissioning, Integration & ATP for 2G, 3G & 4G network implementation.<br>
+• DBS (BBU-MU & RRU) Implementation (Commissioning & Integration) for 3G & 4G network implementation, with required Power & CPRI/Fibre Cable Installation, and connectivity to DCDB/SMPS.<br>
+• SRAN Network Implementation (with required New or SWAP Activity) for 2G, 3G & 4G network implementation.<br>
+• BTS / DBS and GSM Antenna SWAP<br>
+• MW I&C, Link Alignment & NMS Visibility (Node Management) for different antenna sizes.<br>
+• MW SWAP & Upgrade Activity.<br>
+• GSM (RF) Antenna Installation.<br>
+• IF Cable Installation for MW Implementation.<br>
+• BTS Site RFI Survey and Report Submission.<br>
+• MW RFI Survey and Report Submission.<br>
+• Android based quality closure e.g EPMS, ISDP, 11A/11B, L1/L2, MS16-17 based on customer quality closure requirements.<br>
+</p>
+<hr>
+<div class="switch">Night mode:              
+        <span class="inner-switch">OFF</span>
+    </div>
+    <style type="text/css">
+      .switch {
+    align-self: flex-end;
+    margin: 0.9375rem;
+}
+.inner-switch {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #555;
+    border-radius: 1.25rem;
+    width: 3.125rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.1875rem;
+    margin-left: 0.3125rem;
+}
+.dark,
+.dark * {
+    background-color: #222;
+    color: #e6e6e6;
+    border-color: #e6e6e6;
+}
+    </style>
+    <script type="text/javascript">
+      $( ".inner-switch" ).on("click", function() {
+    if( $( "body" ).hasClass( "dark" )) {
+      $( "body" ).removeClass( "dark" );
+      $( ".inner-switch" ).text( "OFF" );
+    } else {
+      $( "body" ).addClass( "dark" );
+      $( ".inner-switch" ).text( "ON" );
+    }
+});
+    </script>
+      <hr>
+
+  <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">WI-TECH is a comprehensive regional company that delivers technology and applications in turnkey solutions to businesses and governments.</p>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="zishanabout.html">About Us</a></li>
+              <li><a href="contactwitech.html">Contact Us</a></li>
+              <li><a href="witechgallery.html">Gallery</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="index.html">WI-TECH</a><p>|| Developed & Design by <a href="index.html">Wi-Tech</a>/</p><a href="https://www.instagram.com/mashiyathussain4shamid/">Mashiyat.</a></p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="index.html"><i class="fa fa-facebook"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+<style>
+  .site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#EC6953;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#EC6953;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+</style>
